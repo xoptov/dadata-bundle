@@ -1,0 +1,22 @@
+{
+    "name": "xoptov/dadata-bundle",
+    "description": "Bundle for DaData service.",
+    "type": "bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maksim Khortov",
+            "email": "xoptov@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Xoptov\\DaDataBundle\\": "" }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:xoptov/dadata-bundle.git"
+        }
+    ],
+    "require": {}
+}
