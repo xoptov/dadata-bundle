@@ -11,25 +11,24 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 class AddressObjectType extends AbstractType
 {
     /**
-     * @param FormBuilderInterface $builder
-     * @param array $options
+     * @inheritdoc
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add("fiasId", TextType::class)
-            ->add("kladrId", TextType::class)
-            ->add("type", TextType::class)
-            ->add("withType", TextType::class)
-            ->add("typeFull", TextType::class)
-            ->add("value", TextType::class);
+            ->add('fiasId', TextType::class)
+            ->add('kladrId', TextType::class)
+            ->add('type', TextType::class)
+            ->add('withType', TextType::class)
+            ->add('typeFull', TextType::class)
+            ->add('value', TextType::class);
     }
 
     /**
-     * @param OptionsResolver $resolver
+     * @inheritdoc
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefault("data_class", AddressObject::class);
+        $resolver->setDefault('data_class', AddressObject::class);
     }
 }
