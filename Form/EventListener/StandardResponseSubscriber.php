@@ -2,9 +2,9 @@
 
 namespace Xoptov\DaDataBundle\Form\EventListener;
 
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\Form\FormEvents;
 use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class StandardResponseSubscriber implements EventSubscriberInterface
 {
@@ -14,7 +14,7 @@ class StandardResponseSubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents()
     {
         return array(
-            FormEvents::PRE_SUBMIT => "preSubmit"
+            FormEvents::PRE_SUBMIT => 'preSubmit'
         );
     }
 
@@ -27,7 +27,7 @@ class StandardResponseSubscriber implements EventSubscriberInterface
 
         if (is_array($data) && count($data)) {
             $result = array(
-                "addresses" => $data
+                'addresses' => $data
             );
 
             $event->setData($result);

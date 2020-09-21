@@ -12,27 +12,40 @@ namespace Xoptov\DaDataBundle\Model;
  */
 class AddressObject
 {
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $fiasId;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $kladrId;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $type;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $withType;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $typeFull;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     protected $value;
 
     /**
      * @param $name
      * @param $arguments
+     *
      * @return string
      */
     public function __call($name, $arguments)
@@ -42,6 +55,7 @@ class AddressObject
 
     /**
      * @param string $fiasId
+     *
      * @return AddressObject
      */
     public function setFiasId($fiasId)
@@ -61,6 +75,7 @@ class AddressObject
 
     /**
      * @param string $kladrId
+     *
      * @return AddressObject
      */
     public function setKladrId($kladrId)
@@ -80,6 +95,7 @@ class AddressObject
 
     /**
      * @param string $type
+     *
      * @return AddressObject
      */
     public function setType($type)
@@ -99,6 +115,7 @@ class AddressObject
 
     /**
      * @param string $withType
+     *
      * @return AddressObject
      */
     public function setWithType($withType)
@@ -118,6 +135,7 @@ class AddressObject
 
     /**
      * @param string $typeFull
+     *
      * @return AddressObject
      */
     public function setTypeFull($typeFull)
@@ -137,6 +155,7 @@ class AddressObject
 
     /**
      * @param string $value
+     *
      * @return AddressObject
      */
     public function setValue($value)

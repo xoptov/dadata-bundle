@@ -9,6 +9,7 @@ class StandardResponse
 
     /**
      * @param array $addresses
+     *
      * @return StandardResponse
      */
     public function setAddresses(array $addresses)

@@ -4,44 +4,69 @@ namespace Xoptov\DaDataBundle\Model;
 
 class Address
 {
-    /** @var string */
+    /**
+     * @var string
+     */
     private $source;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     private $result;
 
-    /** @var AddressObject */
+    /**
+     * @var AddressObject
+     */
     private $region;
 
-    /** @var AddressObject */
+    /**
+     * @var AddressObject
+     */
     private $area;
 
-    /** @var AddressObject */
+    /**
+     * @var AddressObject
+     */
     private $locality;
 
-    /** @var AddressObject */
+    /**
+     * @var AddressObject
+     */
     private $district;
 
-    /** @var AddressObject */
+    /**
+     * @var AddressObject
+     */
     private $street;
 
-    /** @var AddressObject */
+    /**
+     * @var AddressObject
+     */
     private $house;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     private $fiasId;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     private $kladrId;
 
-    /** @var int */
+    /**
+     * @var int
+     */
     private $fiasLevel;
 
-    /** @var Coordinate */
+    /**
+     * @var Coordinate
+     */
     private $coordinate;
 
     /**
      * @param string $source
+     *
      * @return Address
      */
     public function setSource($source)
@@ -61,6 +86,7 @@ class Address
 
     /**
      * @param string $result
+     *
      * @return Address
      */
     public function setResult($result)
@@ -80,6 +106,7 @@ class Address
 
     /**
      * @param AddressObject $addressObject
+     *
      * @return Address
      */
     public function setRegion(AddressObject $addressObject)
@@ -99,6 +126,7 @@ class Address
 
     /**
      * @param AddressObject $addressObject
+     *
      * @return Address
      */
     public function setArea(AddressObject $addressObject)
@@ -118,6 +146,7 @@ class Address
 
     /**
      * @param AddressObject $addressObject
+     *
      * @return Address
      */
     public function setLocality(AddressObject $addressObject)
@@ -137,6 +166,7 @@ class Address
 
     /**
      * @param AddressObject $addressObject
+     *
      * @return Address
      */
     public function setDistrict(AddressObject $addressObject)
@@ -156,6 +186,7 @@ class Address
 
     /**
      * @param AddressObject $addressObject
+     *
      * @return Address
      */
     public function setStreet(AddressObject $addressObject)
@@ -175,6 +206,7 @@ class Address
 
     /**
      * @param AddressObject $addressObject
+     *
      * @return Address
      */
     public function setHouse(AddressObject $addressObject)
@@ -194,6 +226,7 @@ class Address
 
     /**
      * @param string $fiasId
+     *
      * @return Address
      */
     public function setFiasId($fiasId)
@@ -213,6 +246,7 @@ class Address
 
     /**
      * @param string $kladrId
+     *
      * @return Address
      */
     public function setKladrId($kladrId)
@@ -232,6 +266,7 @@ class Address
 
     /**
      * @param int $level
+     *
      * @return Address
      */
     public function setFiasLevel($level)
@@ -251,6 +286,7 @@ class Address
 
     /**
      * @param Coordinate $coordinate
+     *
      * @return Address
      */
     public function setCoordinate(Coordinate $coordinate)

@@ -10,17 +10,24 @@ class Coordinate
     const ACCURACY_SETTLEMENT = 3;
     const ACCURACY_CITY = 4;
 
-    /** @var float */
+    /**
+     * @var float
+     */
     private $latitude;
 
-    /** @var float */
+    /**
+     * @var float
+     */
     private $longitude;
 
-    /** @var int */
+    /**
+     * @var int
+     */
     private $accuracy;
 
     /**
      * @param float $latitude
+     *
      * @return Coordinate
      */
     public function setLatitude($latitude)
@@ -40,6 +47,7 @@ class Coordinate
 
     /**
      * @param float $longitude
+     *
      * @return Coordinate
      */
     public function setLongitude($longitude)
@@ -59,6 +67,7 @@ class Coordinate
 
     /**
      * @param int $accuracy
+     *
      * @return Coordinate
      */
     public function setAccuracy($accuracy)
