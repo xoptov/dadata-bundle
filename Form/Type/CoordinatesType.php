@@ -3,12 +3,12 @@
 namespace Xoptov\DaDataBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
-use Xoptov\DaDataBundle\Model\Coordinate;
+use Xoptov\DaDataBundle\Model\Coordinates;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 
-class CoordinateType extends AbstractType
+class CoordinatesType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -27,6 +27,6 @@ class CoordinateType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefault("data_class", Coordinate::class);
+        $resolver->setDefault("data_class", Coordinates::class);
     }
 }

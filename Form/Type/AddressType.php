@@ -38,7 +38,7 @@ class AddressType extends AbstractType
             ->add('fiasId', TextType::class)
             ->add('kladrId', TextType::class)
             ->add('fiasLevel', TextType::class)
-            ->add('coordinate', CoordinateType::class, [
+            ->add('coordinates', CoordinatesType::class, [
                 'required' => false
             ]);
 

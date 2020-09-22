@@ -55,7 +55,7 @@ class AddressSubscriber implements EventSubscriberInterface
 
         if (isset($data['qc_geo']) && intval($data['qc_geo']) < 5) {
             if (!empty($data['geo_lat']) && !empty($data['geo_lon'])) {
-                $resultData['coordinate'] = array(
+                $resultData['coordinates'] = array(
                     'latitude' => $data['geo_lat'],
                     'longitude' => $data['geo_lon'],
                     'accuracy' => $data['qc_geo']

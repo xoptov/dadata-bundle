@@ -2,7 +2,7 @@
 
 namespace Xoptov\DaDataBundle\Model;
 
-class Coordinate
+class Coordinates
 {
     const ACCURACY_EXACT = 0;
     const ACCURACY_NEAREST_HOUSE = 1;
@@ -28,7 +28,7 @@ class Coordinate
     /**
      * @param float $latitude
      *
-     * @return Coordinate
+     * @return Coordinates
      */
     public function setLatitude($latitude)
     {
@@ -48,7 +48,7 @@ class Coordinate
     /**
      * @param float $longitude
      *
-     * @return Coordinate
+     * @return Coordinates
      */
     public function setLongitude($longitude)
     {
@@ -68,7 +68,7 @@ class Coordinate
     /**
      * @param int $accuracy
      *
-     * @return Coordinate
+     * @return Coordinates
      */
     public function setAccuracy($accuracy)
     {

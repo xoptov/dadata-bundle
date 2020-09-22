@@ -60,9 +60,9 @@ class Address
     private $fiasLevel;
 
     /**
-     * @var Coordinate
+     * @var Coordinates
      */
-    private $coordinate;
+    private $coordinates;
 
     /**
      * @param string $source
@@ -285,22 +285,22 @@ class Address
     }
 
     /**
-     * @param Coordinate $coordinate
+     * @param Coordinates $coordinates
      *
      * @return Address
      */
-    public function setCoordinate(Coordinate $coordinate)
+    public function setCoordinates(Coordinates $coordinates)
     {
-        $this->coordinate = $coordinate;
+        $this->coordinates = $coordinates;
 
         return $this;
     }
 
     /**
-     * @return Coordinate
+     * @return Coordinates
      */
-    public function getCoordinate()
+    public function getCoordinates()
     {
-        return $this->coordinate;
+        return $this->coordinates;
     }
 }
